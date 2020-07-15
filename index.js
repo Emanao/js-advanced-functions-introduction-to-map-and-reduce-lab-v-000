@@ -59,6 +59,6 @@ function reduceToAllTrue(ary){
 function reduceToAnyTrue(ary){
   console.log(ary);
   let accu=true;
-   ary.forEach(elem=> accu= accu!!Boolean(elem));
+   ary.forEach(elem=> accu= accu||Boolean(elem));
   return accu;
 }
