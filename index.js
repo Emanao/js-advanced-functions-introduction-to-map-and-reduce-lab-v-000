@@ -34,8 +34,14 @@ function mapToSquare(ary){
   return new_ary;
 }
 
-function reduceToTotal(ary, initialValue){
-  return ary.reduce( (acc, cur)=> acc+cur, !!initialValue?initialValue:0 );
+// function reduceToTotal(ary, initialValue){
+//   return ary.reduce( (acc, cur)=> acc+cur, !!initialValue?initialValue:0 );
+// }
+function reduceToTotal(ary){
+  const new_ary = []
+  let accu = 0;
+  ary.forEach(elem=>new_ary.push(accu+=elem));
+  return new_ary;
 }
 
 function reduceToAllTrue(ary){
