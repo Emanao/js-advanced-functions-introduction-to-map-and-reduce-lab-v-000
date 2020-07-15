@@ -49,7 +49,7 @@ function reduceToTotal(ary,initialValue){
 function reduceToAllTrue(ary){
   console.log(ary);
   let accu=true;
-  // ary.forEach(elem=>accu&&=elem);
+   ary.forEach(elem=>accu&&=Boolean(elem));
   return accu;
 }
 
