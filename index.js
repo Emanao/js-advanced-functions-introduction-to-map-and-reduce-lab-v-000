@@ -51,6 +51,7 @@ function reduceToAllTrue(ary){
   ary.forEach(elem=>accu&&=!!elem);
   return accu;
 }
+
 function reduceToAnyTrue(ary){
   return ary.reduce((acc, cur)=>!!acc||!!cur)
 }
