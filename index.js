@@ -50,7 +50,7 @@ function reduceToAllTrue(ary){
   console.log(ary);
   let accu=true;
    ary.forEach(elem=>{
-     accu&&=Boolean(elem)
+     accu= accu&&Boolean(elem)
 
      console.log(accu);
    });
