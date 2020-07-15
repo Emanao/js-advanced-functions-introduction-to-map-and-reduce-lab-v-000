@@ -37,8 +37,8 @@ function mapToSquare(ary){
 // function reduceToTotal(ary, initialValue){
 //   return ary.reduce( (acc, cur)=> acc+cur, !!initialValue?initialValue:0 );
 // }
-function reduceToTotal(ary){
-  let accu = 0;
+function reduceToTotal(ary,initialValue){
+  let accu =!!initialValue?initialValue:0;
   ary.forEach(elem=>accu+=elem);
   return accu;
 }
