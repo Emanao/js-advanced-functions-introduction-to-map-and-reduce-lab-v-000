@@ -48,7 +48,7 @@ function reduceToTotal(ary,initialValue){
 // }
 function reduceToAllTrue(ary){
   let accu=true;
-  ary.forEach(elem=>!!accu&&!!elem);
+  ary.forEach(elem=>accu&&=!!elem);
   return accu;
 }
 function reduceToAnyTrue(ary){
